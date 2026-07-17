@@ -1,10 +1,21 @@
-# 🎮 Tic Tac Toe
+# 🎮 AI Tic Tac Toe
 
 A desktop Tic Tac Toe game built entirely in **Python** using **PyQt5** — no HTML, CSS, JavaScript, or backend server involved. Everything is native Python GUI. Play against an AI powered by the **Minimax algorithm**, or challenge a friend in 2-player mode. 🧠✨
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
 ![PyQt5](https://img.shields.io/badge/GUI-PyQt5-green?logo=qt&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+---
+
+## 🚀 Quick Start (No Python Needed)
+
+Don't want to install Python? A pre-built executable is already included in this repository:
+
+1. Go into the **`dist`** folder
+2. Download / run **`TicTacToe.exe`**
+3. Double-click to run — that's it! No installation, no dependencies required ✅
+
+> ⚠️ Windows Defender or your antivirus might show a warning since the exe isn't code-signed. Click **"More info" → "Run anyway"** — the app is safe, this is common for PyInstaller-built executables.
 
 ---
 
@@ -27,36 +38,28 @@ tictactoe_pyqt/
 ├── main.py             # Full application: UI + game logic + entry point
 ├── ai.py                # AI logic (Minimax algorithm)
 ├── requirements.txt     # Python dependencies
+├── icon.ico              # App icon
+├── dist/
+│   └── TicTacToe.exe     # Pre-built standalone Windows executable
 └── README.md            # This file
 ```
 
 ---
 
-## ⚙️ Requirements
+## 🛠️ Running from Source (For Developers)
 
+If you'd rather run it from the Python source code instead of the exe:
+
+### Requirements
 - 🐍 Python 3.8 or higher
 - 🖥️ PyQt5
 
----
-
-## 📥 Installation
-
-1. **Clone the repository**
-```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
-```
-
-2. **Install dependencies**
-```bash
-   pip install -r requirements.txt
-```
-
----
-
-## ▶️ Running the App
+### Steps
 
 ```bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+pip install -r requirements.txt
 python main.py
 ```
 
@@ -82,16 +85,16 @@ A window will open showing the mode-selection screen. Choose **Single Player (vs
 
 ---
 
-## 📦 Building a Standalone `.exe` (Windows)
+## 📦 Rebuilding the `.exe` Yourself
 
-To share the app with someone who doesn't have Python installed:
+If you modify the code and want to rebuild the executable:
 
 ```bash
 pip install pyinstaller
 python -m PyInstaller --onefile --windowed --icon="icon.ico" --add-data "icon.ico;." --name "TicTacToe" main.py
 ```
 
-The finished executable will be in `dist/TicTacToe.exe` — fully self-contained, no dependencies needed on the target machine. 🚀
+The new executable will be generated in `dist/TicTacToe.exe`.
 
 ---
 
@@ -106,4 +109,4 @@ The finished executable will be in `dist/TicTacToe.exe` — fully self-contained
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This is a personal project, created for learning purposes. Feel free to explore the code.
