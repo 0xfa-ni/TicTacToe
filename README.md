@@ -34,7 +34,7 @@ Don't want to install Python? A pre-built executable is already included in this
 ## 📁 Project Structure
 
 ```
-tictactoe_pyqt/
+tictactoe/
 ├── main.py             # Full application: UI + game logic + entry point
 ├── ai.py                # AI logic (Minimax algorithm)
 ├── requirements.txt     # Python dependencies
@@ -57,8 +57,8 @@ If you'd rather run it from the Python source code instead of the exe:
 ### Steps
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/0xfa-ni/TicTacToe.git
+cd TicTacToe
 pip install -r requirements.txt
 python main.py
 ```
